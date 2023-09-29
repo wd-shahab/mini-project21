@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;box-sizing: border-box;
+}
+
+body{
+  font-family: 'DM Sans';
+  height: 100vh;
+  background: hsl(27, 66%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+}
+
+.container{
+  width: clamp(280px, 60vw, 500px);
+}
+
+.box{
+  width: 100%;
+  border-radius: 15px;
+  padding: 1.5rem 1.75rem;
+}
+
+.top{
+  background: hsl(10, 79%, 65%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.top p{
+  color: hsl(33, 100%, 98%);
+  margin-bottom: .5rem;
+}
+
+.top span{
+  font-size: 25px;
+  font-weight: 700;
+  color: hsl(33, 100%, 98%);
+}
+.low{
+  font-size: 13px;
+}
+
+.i-logo{
+  width: 60px;
+  margin-right: .5rem;
+}
+
+.main{
+  background: hsl(33, 100%, 98%);
+}
+
+.chart-box{
+  padding: 1rem 0;
+  height: 250px;
+  border-bottom: 2px solid hsl(27, 66%, 92%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.total{
+  margin: 1rem 0;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex span{
+  font-weight: 700;
+}
+
+.flex > span{
+  font-size: 35px;
+}
+
+.total .low{
+  color: hsl(28, 10%, 53%);
+}
+
+@media screen and (max-width: 640px) {
+  .container{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .main{
+    padding: .5rem;
+  }
+  .title{
+    font-size: 18px;
+  }
+}

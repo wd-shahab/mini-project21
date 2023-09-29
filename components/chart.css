@@ -1,0 +1,53 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  font-family: 'DM Sans';
+}
+
+.masseg{
+  padding: .5rem;
+  background: hsl(25, 47%, 15%);
+  border-radius: 10px;
+  font-size: 12px;
+  color: hsl(33, 100%, 98%);
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(0, 5px);
+  transition: all .5s;
+}
+
+.chart{
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 5px;
+  background: hsl(10, 79%, 65%);
+  transition: all .3s;
+}
+
+.day{
+  color: hsl(28, 10%, 53%);
+  margin: 0;
+}
+
+.chart:hover{
+  opacity: .8;
+}
+
+.container:hover .masseg {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.blue .chart{
+  background: hsl(186, 34%, 60%);
+}
+
+@media screen and (max-width: 380px) {
+  .container{
+    width: 35px;
+  }
+}
